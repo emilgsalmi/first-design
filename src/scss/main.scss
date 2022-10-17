@@ -1,0 +1,16 @@
+@use "resets" as r;
+@use "variables" as v;
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bground{
+    background-image: url(/src/assets/negative-space-black-forest-dawn.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
