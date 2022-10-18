@@ -1,0 +1,38 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.main{
+    height: 265vh;
+    width: 100%;
+
+    .main__content{
+        height: v.$mainheight;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: v.$size-25;
+        
+        h1{
+            margin: v.$size-25;
+            font-size: v.$sizeh1;
+        }
+        .main__content_pre{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .main__content_name{
+                text-align: center;
+                margin: 20px;
+            }
+            .main__content_pic{
+                @include m.pic;              
+            }
+            .main__content_text{
+                @include m.main-text;
+            }
+        }
+    }
+}

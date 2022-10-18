@@ -1,0 +1,22 @@
+@use "variables" as v;
+
+@mixin pre {
+    color: v.$fontwhite;
+    text-align: center;
+    font-size: v.$sizep;
+}
+
+@mixin pic{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: v.$shadow;
+}
+
+@mixin main-text{
+    margin: v.$size-25;
+    border:1px solid grey;
+    background-color: v.$fontgrey;
+    padding: 45px;
+    border-radius: 10px;
+}

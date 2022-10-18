@@ -1,0 +1,10 @@
+@use "variables" as v;
+
+.bground{
+    background-image: url(/src/assets/negative-space-black-forest-dawn.jpg);
+    height: v.$bgheight;
+    width: v.$bgwidth;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
