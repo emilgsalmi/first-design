@@ -20,3 +20,12 @@
     padding: 45px;
     border-radius: 10px;
 }
+
+@mixin footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: v.$size-25;
+    color: v.$fontwhite;
+    font-size: v.$size-25;
+    padding-left: 80px;
+}

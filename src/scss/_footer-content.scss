@@ -2,18 +2,25 @@
 @use "mixins" as m;
 
 .footer__content{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-color: v.$fontblack;
 
-    .footer__content-info{
+    .footer__content-all{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        top:50px;
-        width: 100%;
+        flex-direction: column;
+        justify-content:space-evenly;
         height: 100%;
-        color: v.$fontwhite;
-        text-align: center;
+        padding: 25px;
+
+        .footer__content-info{
+            @include m.footer-info;
+        }
+        .footer__content-adress{
+            @include m.footer-info;
+        }
+        .footer__content-social{
+            @include m.footer-info;
+        }
     }
 }
