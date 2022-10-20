@@ -17,8 +17,15 @@
     margin: v.$size-25;
     border:1px solid grey;
     background-color: v.$fontgrey;
-    padding: 45px;
+    padding: 30px;
     border-radius: 10px;
+    text-align: center ;
+    @include for-desktop{
+        width: 22em;
+    }
+        
+    
+
 }
 
 @mixin footer-info{
@@ -28,4 +35,11 @@
     color: v.$fontwhite;
     font-size: v.$size-25;
     padding-left: 80px;
+    width: 50%
+}
+@mixin for-desktop{
+    @media screen and (min-width:1200px){
+        @content
+        
+    }
 }

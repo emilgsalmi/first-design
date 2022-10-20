@@ -8,7 +8,7 @@
     flex-direction: column;
     height: 100%;
     gap: v.$size-45;
-    padding: 0 v.$size-padding-horizantal;
+    padding: v.$size-padding-horizantal v.$size-padding-horizantal 250px;
         .hero__title{
             color: v.$fontwhite;
             text-align: center;

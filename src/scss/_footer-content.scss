@@ -6,12 +6,23 @@
     width: 100%;
     background-color: v.$fontblack;
 
+    @include m.for-desktop{
+        height: 200px;
+    }
     .footer__content-all{
         display: flex;
         flex-direction: column;
         justify-content:space-evenly;
+        align-items: center;
+        width: 100%;
         height: 100%;
-        padding: 25px;
+        padding: 10px;
+
+        @include m.for-desktop{
+            flex-direction: row;
+            height: 200px;
+            align-items: center;
+        }
 
         .footer__content-info{
             @include m.footer-info;
@@ -21,6 +32,9 @@
         }
         .footer__content-social{
             @include m.footer-info;
+            i{
+                padding-right: 10px;
+            }
         }
     }
 }

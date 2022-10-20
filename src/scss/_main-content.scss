@@ -2,15 +2,47 @@
 @use "mixins" as m;
 
 .main{
-    height: 265vh;
+    height: fit-content;    
     width: 100%;
+    padding-bottom: 5%;
+
+    @include m.for-desktop{
+        padding-bottom: 0;
+    }
+
+
+    #main__arrow{
+        position:absolute;
+        font-size: 30px;
+        color: v.$fontblack;
+        text-align: center;
+        width: 100%;
+
+        @include m.for-desktop{
+            bottom: -90%;
+        }
+    }
+    h1{
+        margin: v.$size-25;
+        font-size: v.$sizeh1;
+        text-align: center;
+    }
 
     .main__content{
-        height: v.$mainheight;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: v.$size-25;
+        gap: 15px;
+
+        @include m.for-desktop{
+            height: fit-content;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: auto;
+            justify-content: center;
+        }
+
         
         h1{
             margin: v.$size-25;
@@ -23,6 +55,10 @@
             justify-content: center;
             align-items: center;
 
+            @include m.for-desktop{
+                width: 40%;
+            }
+
             .main__content_name{
                 text-align: center;
                 margin: 20px;
@@ -31,6 +67,11 @@
                 @include m.pic;              
             }
             .main__content_text{
+                #qoute-icon{
+                    height: 20px;
+                    width: 45px;
+                    font-size: 50px;
+                }
                 @include m.main-text;
             }
         }

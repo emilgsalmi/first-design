@@ -6,51 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forest</title>
     <link href="scss/main.scss" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d35e03241.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <nav class="nav"></nav>
     <header class="bground">
-        <div class="hero"">
-            <h1 class="hero__title">Welcome to nature</h1>
-            <p class="hero__pre">A journey through time and sheep</p>
-            <p class="hero__pre">To see how ...cotton... is mage, made i mean...</p>
-        </div>    
-    </header>
 
-<main class="main">
+        <section class="top-nav">
+            <div></div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+            <ul class="menu">
+                <li><a href="#hero-first">Hem</a></li>
+                <li><a href="#main_team">Om</a></li>    
+                <li><a href="#main__footer">Kontakt</a></li>
+            </ul>
+          </section>
+
+            <div id="hero-first" class="hero"">
+                <h1 class="hero__title">Welcome to nature</h1>
+                <p class="hero__pre">A journey through time and sheep</p>
+                <p class="hero__pre">To see how ...cotton... is mage, made i mean...</p>
+            </div> 
+            <div class="arrow_tomain">
+                <a id="hero__arrow" href="#main_team">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a> 
+            </div>  
+        </header>
+
+<main id="main_team" class="main">
+    <h1>Träffa laget</h1>
     <article class="main__content">
-        <h1>Träffa laget</h1>
         <div class="main__content_pre">
             <p class="main__content_name">Rakib</p>
             <img class="main__content_pic" src="/src/assets/profiles/Rakib_Square.png">
-            <p class="main__content_text">Rakib är vår vassaste node-utvecklare och 
-            håller städndigt ett öga på nya tekniker</p>
+            <p class="main__content_text">
+                <i id="qoute-icon" class="fa-solid fa-quote-right"></i>
+            Rakib är vår vassaste node-utvecklare och 
+            håller städndigt ett öga på nya tekniker
+        </p>
         </div>
         <div class="main__content_pre">
             <p class="main__content_name">Alexandra</p>
             <img class="main__content_pic"  src="/src/assets/profiles/Alexandra_Square.png">
-            <p class="main__content_text">Alexandra håller reda på alla överallt och ser till att det flyter</p>
+            <p class="main__content_text">
+                <i id="qoute-icon" class="fa-solid fa-quote-right"></i>
+                Alexandra håller reda på alla överallt och ser till att det flyter
+            </p>
         </div>
         <div class="main__content_pre">
             <p class="main__content_name">Lasse</p>
             <img class="main__content_pic" src="/src/assets/profiles/NoPerson_Square.png">
-            <p class="main__content_text">Gör övriga saker... mestadels...</p>
+            <p class="main__content_text">
+                <i id="qoute-icon" class="fa-solid fa-quote-right"></i>
+                Gör övriga saker... mestadels....
+            </p>
         </div>
         <div class="main__content_pre">
             <p class="main__content_name">Sebastian</p>
             <img class="main__content_pic" src="/src/assets/profiles/Sebastian_Square.png">
-            <p class="main__content_text">En av våra utbildare som har stor erfarenhet av ganska många saker</p>
+            <p class="main__content_text">
+                <i id="qoute-icon" class="fa-solid fa-quote-right"></i>
+                En av våra utbildare som har stor erfarenhet av ganska många saker
+            </p>
         </div>
     
     </article>
 
+    <a id="main__arrow" href="#main__footer">
+        <i class="fa-solid fa-circle-down"></i>
+    </a>
 
 </main>
     
 </body>
 
 <footer>
-    <div class="footer__content">
+    <div id="main__footer" class="footer__content">
         <section class="footer__content-all">
             <article class="footer__content-adress">
                 <span>Tegel Consulting AB</span>
@@ -62,9 +97,18 @@
                 <span>070-123 456 78</span>
             </article>
             <article class="footer__content-social">
-                <span>Instagram</span>
-                <span>Twitter</span>
-                <span>Facebook</span>
+                <span>
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </span>
+                <span>
+                    <i class="fa-brands fa-twitter"></i>
+                    Twitter
+                </span>
+                <span>
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+                </span>
             </article>
         </section>
     </div>
