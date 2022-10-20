@@ -10,18 +10,6 @@
         padding-bottom: 0;
     }
 
-
-    #main__arrow{
-        position:absolute;
-        font-size: 30px;
-        color: v.$fontblack;
-        text-align: center;
-        width: 100%;
-
-        @include m.for-desktop{
-            bottom: -90%;
-        }
-    }
     h1{
         margin: v.$size-25;
         font-size: v.$sizeh1;
@@ -74,6 +62,24 @@
                 }
                 @include m.main-text;
             }
+        }
+    }
+    .arrow_tofooter{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+    }
+    #main__arrow{
+        position:relative;
+        font-size: 30px;
+        color: v.$fontblack;
+        text-align: center;
+        width: 100%;
+        height: fit-content;
+
+        @include m.for-desktop{
+            
         }
     }
 }
